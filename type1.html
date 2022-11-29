@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+
+</head>
+
+<body>
+    <h1>HI HOW ARE YOU</h1>
+    <img src="Images/upma.jpg" alt=""><br>
+    <p id="pri2">10</p>
+    <input type="number" id="pri1" value="0"><br>
+    <button onclick="fun()">ADD TO CART</button>
+    <div id="new">
+        <h1>CART</h1>
+        
+
+    </div>
+    <script>
+        function fun() {
+            var img = document.createElement('img');
+            img.src = 'Images/upma.jpg';
+            document.getElementById('new').appendChild(img);
+            var pric=parseInt(document.getElementById('pri1').value);
+            console.log(pric);
+            var pric1=parseInt(document.getElementById('pri2'));
+            console.log(pric1);
+
+        }
+
+    </script>
+</body>
+
+</html>
